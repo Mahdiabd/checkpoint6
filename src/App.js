@@ -8,8 +8,8 @@ class App extends Component {
   render() {
     
     const legend ={
-      fontSize: 20, margin: 8, backgroundColor: 'black',  borderColor:'goldenrod',textAlign:'center',
-         color: 'goldenrod', display:'inline-block', verticalAlign:'top', width:310, height:360, borderStyle:'dotted'  
+      fontSize: 20, margin: 8, textAlign:'center',
+         color: 'goldenrod', display:'inline-block', verticalAlign:'top', width:319, height:360,
         }
     const head ={
       textAlign:'center'
@@ -20,10 +20,10 @@ class App extends Component {
     
          <h1 style={head} className="header" >Juventus</h1>
          <div className="test-part">
-         <span style={legend} ><Box  name='Delpiero' des="El Capitano" img="./delpiero.jpg"/></span>
-         <span style={legend}> <Box name='Buffon' des="The Spider" img="./buffon.jpg"/></span>
-         <span style={legend}><Box name='Nedved' des="Golden Boy" img="./nedved.jpg"/> </span>
-         <span style={legend}> <Box name='Chiellini' des="Go Gorilla" img="./chiellini.jpg"/></span>
+         <div style={legend} ><Box position="Forwarder" name='Delpiero' des="El Capitano" img="./delpiero.jpg"/></div>
+         <div style={legend}> <Box position="GoalKeeper" name='Buffon' des="The Spider" img="./buffon.jpg"/></div>
+         <div style={legend}><Box position="Forwarder" name='Nedved' des="Golden Boy" img="./nedved.jpg"/> </div>
+         <div style={legend}> <Box position="Defender" name='Chiellini' des="Go Gorilla" img="./chiellini.jpg"/></div>
         </div>
       </div>
     );
